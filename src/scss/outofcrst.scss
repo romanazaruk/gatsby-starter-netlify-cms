@@ -1,0 +1,31 @@
+.outofcrst-container-main {
+  max-width: 944px;
+  border-bottom: 3px solid #e3e4eb;
+  margin-bottom: 24px;
+}
+.outofcrst-container {
+  margin: 0 auto;
+  max-width: 644px;
+}
+
+.outofcrst-title {
+  max-width: 570px;
+}
+
+.outofcrst-title-p {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 162.5%;
+  color: #555770;
+}
+.outofcrst-btn-img {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 56px;
+  margin-bottom: 360px;
+}
+.outofcrst-img-link:hover {
+  fill: #50a1f3;
+}

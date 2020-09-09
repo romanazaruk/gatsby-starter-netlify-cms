@@ -1,0 +1,35 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&display=swap");
+}
+.footer-para {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 157%;
+  color: #28293d;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-social-logo {
+    ul {
+      li {
+        display: inline;
+      }
+    }
+  }
+}
+.footer-sign {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 157%;
+  color: #545454;
+}
+
+.footer-img {
+  margin-left: 22px;
+}

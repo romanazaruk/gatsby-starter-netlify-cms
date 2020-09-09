@@ -1,0 +1,24 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+}
+.now-main {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.now-container {
+  border-bottom: 3px solid #e3e4eb;
+  padding-bottom: 122px;
+  padding-top: 50px;
+}
+
+.span-number {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1p6x;
+  line-height: 157%;
+  font-feature-settings: "tnum" on, "onum" on;
+  color: #fae5b2;
+}

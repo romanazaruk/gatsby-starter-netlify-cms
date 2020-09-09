@@ -1,0 +1,23 @@
+.highlights-container {
+  background: #ffffff;
+  border: 2px solid #555770;
+  box-sizing: border-box;
+  width: 624px;
+  position: relative;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 184%;
+  color: #28293d;
+  height: 230px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.twitter-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
