@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/NewsletterPost.scss";
+import "../scss/newsletterPost.scss";
 import Headline from "../components/HeadLine";
 
 export default function NewsletterPost({ img, title, text }) {
