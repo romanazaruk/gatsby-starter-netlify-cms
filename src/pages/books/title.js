@@ -13,6 +13,7 @@ import img1 from "../../../static/img/book3.svg";
 import img2 from "../../../static/img/book4.svg";
 import img3 from "../../../static/img/book5.svg";
 import img4 from "../../../static/img/book6.svg";
+import Slides from "../../components/Slides";
 
 function RatingBar({ rating }) {
   let currentRate = rating;
@@ -23,10 +24,14 @@ function RatingBar({ rating }) {
     const rate = currentRate + 1;
 
     if (rate > 0.8) {
-      return <img src={FullStar} />;
+      return <img src={FullStar} className="star" />;
     }
 
-    return rate > 0.4 ? <img src={PartStar} /> : <img src={EmptyStar} />;
+    return rate > 0.4 ? (
+      <img src={PartStar} className="star" />
+    ) : (
+      <img src={EmptyStar} className="star" />
+    );
   };
 
   return (
@@ -67,7 +72,7 @@ export default function title() {
         <div className="books-title-post">
           <div className="books-title-head">
             <HeadLine variant="h1">A Brief History of Time</HeadLine>
-            <img src={AmazonImg} />
+            <img src={AmazonImg} className="books-amazon-link" />
           </div>
           <p className="books-title-author">Stephen W. Hawking</p>
           <div className="books-title-rating-container">
@@ -110,15 +115,8 @@ export default function title() {
         </div>
         <div className="highlights-container-main">
           <HeadLine variant="h3">HIGHLIGHTS</HeadLine>
-          <div className="highlights-posts">
-            <div className="highlights-left">
-              <Highlights style={highlight1}>
-                <div className="highlights-text">
-                  <p> The universe doesn't allow perfection. </p>
-                </div>
-              </Highlights>
-            </div>
-          </div>
+
+          <Slides />
         </div>
         <div className="photos-container-main">
           <HeadLine variant="h3">BOOK REVIEW YOU MAY LIKE </HeadLine>

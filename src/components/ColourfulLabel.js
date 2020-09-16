@@ -12,6 +12,7 @@ const styles = {
   justifyContent: "center",
   alignItems: "center",
   padding: "0 15px",
+  marginRight: "6px",
 };
 
 const getStyles = (color) => {

@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   max-width: 700px;
+  margin-bottom: -15px;
 }
 
 .writing-blog {
@@ -16,7 +17,7 @@
 
 .main-writing {
   border-bottom: 3px solid #e3e4eb;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   margin-bottom: 24px;
 }
 
@@ -58,13 +59,11 @@
   font-size: 18px;
   line-height: 184%;
   color: #28293d;
-  max-height: 196px;
 }
 
 .text-box {
   max-width: 567px;
   margin: 0 auto;
-  max-height: 132px;
   margin-bottom: 0;
 }
 .p-text {
@@ -82,4 +81,20 @@
   max-width: 623px;
   margin: 0 auto;
   margin-top: 41px;
+}
+
+@media only screen and (max-width: 576px) {
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 340px;
+  }
+  .postsInfo-writing {
+    margin-top: 40px;
+  }
+  .post-page-main-container {
+    padding-bottom: 77px;
+  }
 }

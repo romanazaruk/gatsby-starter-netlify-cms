@@ -12,16 +12,16 @@ import gallery6 from "../../static/img/gallery-6.svg";
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="container">
       <div className="main">
         <Navbar />
         <div className="container-about">
           <h1 className="about-title">
-            Hi, I`m<span className="reza-color"> Reza</span> and here’s
+            Hi, I`m <span className="reza-color"> Reza</span> and here’s
             something
             <span className="about-color"> ABOUT</span> me.
           </h1>
-          <img src={lemons} />
+          <img src={lemons} className="img-about-title" />
           <p className="first-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

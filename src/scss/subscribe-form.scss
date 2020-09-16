@@ -1,5 +1,9 @@
 .form-input {
   display: flex;
+  border-color: #50a1f3;
+}
+input:focus {
+  border: 2px solid #50a1f3;
 }
 
 .email-input {
@@ -10,6 +14,9 @@
   width: 271px;
   height: 40px;
   padding-left: 16px;
+}
+.email-input:focus {
+  outline-color: #50a1f3;
 }
 
 .btn-submit-email {
@@ -25,4 +32,14 @@
   line-height: 140%;
   color: #ffffff;
   margin-left: 8px;
+}
+
+@media only screen and (max-width: 576px) {
+  .email-input {
+    width: 206px;
+    height: 48px;
+  }
+  .btn-submit-email {
+    height: 48px;
+  }
 }

@@ -17,8 +17,13 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: 600;
-  font-size: 1p6x;
+  font-size: 16x;
   line-height: 157%;
   font-feature-settings: "tnum" on, "onum" on;
-  color: #fae5b2;
+  color: #ffbf5f;
+}
+@media screen and (max-width: 576px) {
+  .now-container {
+    padding-bottom: 73px;
+  }
 }

@@ -16,6 +16,7 @@
   font-size: 18px;
   line-height: 162.5%;
   color: #555770;
+  margin-top: 30px;
 }
 
 .books-nav {
@@ -23,7 +24,7 @@
   justify-content: space-between;
   flex-direction: row;
   flex: 1;
-  max-width: 125px;
+  max-width: 180px;
   margin-bottom: 38px;
 }
 
@@ -31,24 +32,25 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 157%;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: #28293d;
   text-decoration: none;
-
-  .books-link :active {
-    color: #50a1f3;
-    border-bottom: solid 50a1f3;
-  }
+  margin-right: 32px;
+}
+.active,
+.books-link:hover {
+  color: #50a1f3;
+  text-decoration: underline;
 }
 
 .books-reading-title {
   font-family: Inter;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 18px;
   line-height: 110%;
   letter-spacing: 0.025em;
@@ -69,6 +71,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 24px;
 }
 
 .books-btn-more {
@@ -97,13 +100,22 @@
 .books-title-head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.books-amazon-link {
+  margin-top: 40px;
 }
 
 .books-title-author {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 157%;
+  margin-bottom: 0;
+  margin-top: 10px;
   color: #8e90a6;
+}
+.star {
+  padding-right: 3px;
 }
 
 .books-title-rating-container {
@@ -132,7 +144,7 @@
   max-width: 640px;
   margin: 0 auto;
   margin-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   border-bottom: 3px solid #e6e6e6;
 }
 
@@ -141,6 +153,7 @@
   flex-direction: row;
   margin-top: 24px;
   justify-content: space-around;
+  padding-bottom: 40px;
 }
 
 .photos-container-main {
@@ -157,4 +170,59 @@
 
 .highlights-text {
   padding: 25px 88px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .container-books-main {
+    padding-bottom: 73px;
+  }
+  .books-btn-more {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .books-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: 1;
+    max-width: 350px;
+  }
+
+  .books-amazon-link {
+    display: none;
+  }
+  .books-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 157%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #28293d;
+    margin-right: 32px;
+    border-bottom: solid 1px #c7c8d9;
+    margin-right: 0;
+  }
+  .active,
+  .books-link:hover {
+    color: #50a1f3;
+    border-bottom: solid 2px #50a1f3;
+    text-decoration: none;
+  }
+
+  .book-title-photos {
+    flex-wrap: wrap;
+  }
+
+  .highlights-container-main {
+    max-width: 350px;
+  }
+  .highlights-posts {
+    max-width: 350px;
+  }
 }

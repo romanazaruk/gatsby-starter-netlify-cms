@@ -1,0 +1,34 @@
+.slider {
+  display: block;
+}
+.slider-container {
+  position: relative;
+}
+.next-arrow {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  z-index: 9;
+}
+
+.prevArrow {
+  position: absolute;
+  bottom: -30px;
+}
+
+.nextArrow {
+  position: absolute;
+  right: 0;
+}
+.slides-responsive {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .slider {
+    display: none;
+  }
+  .slides-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+}

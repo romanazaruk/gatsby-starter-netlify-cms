@@ -12,8 +12,8 @@ export default function PostInfo({
   labelTitle,
 }) {
   return (
-    <div classname="container">
-      <HeadLine variant="h1">{title}</HeadLine>
+    <div classname="container-postInfo">
+      <HeadLine variant="h2">{title}</HeadLine>
       <div className="date-label">
         <p className="date-labels-time">
           {date} | {time}

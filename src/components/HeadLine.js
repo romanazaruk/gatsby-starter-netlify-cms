@@ -16,5 +16,5 @@ const getStyle = (variant) =>
 export default function HeadLine({ variant = "h1", children }) {
   const style = getStyle(variant);
 
-  return <h1 style={style}>{children}</h1>;
+  return <h1 className="headline" style={style}>{children}</h1>;
 }

@@ -25,6 +25,7 @@ body {
   margin-bottom: 32px;
   .reza-color {
     background-color: #fae5b2;
+    padding: 3px;
   }
   .about-color {
     color: #50a1f3;
@@ -34,7 +35,6 @@ body {
   font-size: 18px;
   line-height: 155%;
   color: #555770;
-  max-width: 624px;
   margin-top: 32px;
 }
 
@@ -51,11 +51,30 @@ body {
 
 .gallery {
   flex-wrap: wrap;
-  max-width: 631px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .gallery-img {
   margin-bottom: 22px;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 375px;
+    margin-bottom: 40px;
+  }
+
+  .container-about {
+    margin-top: 100px;
+    max-width: 375px;
+    padding-bottom: 64px;
+  }
+  .img-about-title {
+    width: 100vw;
+    margin-left: -16px;
+  }
+  .gallery-img {
+    width: 164px;
+  }
 }

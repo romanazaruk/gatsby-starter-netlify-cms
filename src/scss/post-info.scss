@@ -1,15 +1,31 @@
+.container-postInfo {
+  margin-top: 56px;
+}
 .date-label {
   display: flex;
   flex-direction: row;
+  margin-bottom: 0;
 }
 .date-labels-time {
   margin-right: 16px;
+  color: #8e90a6;
+  margin-bottom: 0;
 }
 .post-text {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 160%;
   color: #555770;
+  margin-top: 0;
+}
+
+.headline {
+  margin-top: 36px;
+}
+@media only screen and (max-width: 576px) {
+  .post-text {
+    margin-bottom: 40px;
+  }
 }

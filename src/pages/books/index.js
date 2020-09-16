@@ -39,9 +39,9 @@ export default function index() {
             <div className="labels">
               <Label title="All" color="white" />
               <Label title="Writing" color="yellow" />
-              <Label title="Thoughts" color="grey" />
+              <Label title="Notes" color="grey" />
               <Label title="Education" color="grey" />
-              <Label title="Notes" color="orange" />
+              <Label title="Thoughts" color="orange" />
               <Label title="Random" color="purple" />
             </div>
             <div className="books-list-container">
