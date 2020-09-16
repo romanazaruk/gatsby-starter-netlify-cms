@@ -10,41 +10,34 @@ import gallery4 from "../../static/img/gallery-4.svg";
 import gallery5 from "../../static/img/gallery-5.svg";
 import gallery6 from "../../static/img/gallery-6.svg";
 
-export default function AboutPage() {
+// const fixUrl = (url) => "/" + url.replaceAll("../", "");
+
+export function AboutPageTemplate({
+  image,
+  title,
+  body,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+}) {
   return (
     <div className="container">
       <div className="main">
         <Navbar />
         <div className="container-about">
-          <h1 className="about-title">
-            Hi, I`m <span className="reza-color"> Reza</span> and here’s
-            something
-            <span className="about-color"> ABOUT</span> me.
-          </h1>
-          <img src={lemons} className="img-about-title" />
-          <p className="first-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-            <a className="link-text">@Duis aute irure dolor</a> in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-          <p className="second-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
-          </p>
+          <h1 className="about-title">{title}</h1>
+          <img src={image} className="img-about-title" />
+          <p className="first-text">{body}</p>
           <div className="gallery">
-            <img src={gallery1} className="gallery-img" />
-            <img src={gallery2} className="gallery-img" />
-            <img src={gallery3} className="gallery-img" />
-            <img src={gallery4} className="gallery-img" />
-            <img src={gallery5} className="gallery-img" />
-            <img src={gallery6} className="gallery-img" />
+            <img src={image1} className="gallery-img" />
+            <img src={image2} className="gallery-img" />
+            <img src={image3} className="gallery-img" />
+            <img src={image4} className="gallery-img" />
+            <img src={image5} className="gallery-img" />
+            <img src={image6} className="gallery-img" />
           </div>
         </div>
       </div>
@@ -52,3 +45,67 @@ export default function AboutPage() {
     </div>
   );
 }
+
+const AboutPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
+
+  return (
+    <AboutPageTemplate
+      title={frontmatter.title}
+      image={frontmatter.image.publicURL}
+      body={frontmatter.body}
+      image1={frontmatter.image1.image.publicURL}
+      image2={frontmatter.image2.image.publicURL}
+      image3={frontmatter.image3.image.publicURL}
+      image4={frontmatter.image4.image.publicURL}
+      image5={frontmatter.image5.image.publicURL}
+      image6={frontmatter.image6.image.publicURL}
+    />
+  );
+};
+
+export default AboutPage;
+
+export const pageQuery = graphql`
+  query AboutPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
+      frontmatter {
+        title
+        body
+        image {
+          publicURL
+        }
+        image1 {
+          image {
+            publicURL
+          }
+        }
+        image2 {
+          image {
+            publicURL
+          }
+        }
+        image3 {
+          image {
+            publicURL
+          }
+        }
+        image4 {
+          image {
+            publicURL
+          }
+        }
+        image5 {
+          image {
+            publicURL
+          }
+        }
+        image6 {
+          image {
+            publicURL
+          }
+        }
+      }
+    }
+  }
+`;

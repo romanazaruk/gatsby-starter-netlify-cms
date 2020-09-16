@@ -4,19 +4,15 @@ import RezasPhoto from "../../static/img/rezas-photo.svg";
 import Twitter from "../../static/img/twitter-hero.svg";
 import Form from "./SubscribeForm";
 
-export default function hero() {
+export default function hero({ title, image, heading }) {
   return (
     <div className="hero-section">
       <div>
-        <img src={RezasPhoto} className="rezas-photo" />
+        <img src={image} className="rezas-photo" />
       </div>
       <div className="rizas-preview">
-        <h1 className="h1-rezas">Hi, I'm Reza 👋</h1>
-        <p className="about-rezas">
-          I'm a writer and marketing leader based in Toronto, Canada. <br />I
-          think and write about startups, personal growth and storytelling. See
-          what I'm up to right now, or check out my latest posts.
-        </p>
+        <h1 className="h1-rezas">{title}</h1>
+        <p className="about-rezas">{heading}</p>
         <div className="link-section">
           <button className="btn-start">Start here</button>
           <img src={Twitter} className="twitter-btn" />
