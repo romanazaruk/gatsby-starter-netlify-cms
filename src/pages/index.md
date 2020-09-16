@@ -1,8 +1,10 @@
 ---
 templateKey: index-page
-title: lloloolololo
-image: /img/apple-touch-icon.png
-heading: lolllololololo
+title: Hi, I'm Reza 👋
+image: /img/rezas-photo.svg
+heading: I'm a writer and startup growth leader based in Toronto, Canada. I
+  think and write about technology startups, mental models and mindful
+  productivity. See what I'm up to right now, or check out my latest posts
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
