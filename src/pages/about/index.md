@@ -1,17 +1,23 @@
 ---
-templateKey: about-page
-path: /about
-title: About our values
-image: /img/about-lemons.svg
 photos:
   - image: /img/gallery-1.svg
   - image: /img/gallery-2.svg
   - image: /img/gallery-3.svg
+path: /about
+templateKey: about-page
+title: About our values
+image: /img/about-lemons.svg
+image1: /img/blog-index.jpg
+image2: /img/book5.svg
+image3: /img/book4.svg
+image4: /img/book6.svg
+image5: /img/book5.svg
+image6: /img/book8.svg
 ---
-### Shade-grown coffee
+### ngfdkjngkdfjlgndlkfsngkdfsjnglkdf
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+gfdkgbfdsjgbfhf]
 
-### Single origin
+gnfjdgkndjfngkdjfngfdkjshgdfiug
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+gfdkjgnfkdjgndkjfgndkfjgnfkd
