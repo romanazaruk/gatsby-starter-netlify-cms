@@ -62,6 +62,10 @@ intro:
       label: yntrlnykltrnyktrjnylkrt
       labelColor: yntlrynlktrjnylkrtj
       post: yntlrynlrkejtnykrtjnylkrtj
+    - title: gfknfgndfkjngldfkg
+      label: gfmd;gmfd;lkm
+      labelColor: gghjhhjhj
+      post: jhdfgkljdsfhglkjdsfhglksdfjglhd
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
