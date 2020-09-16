@@ -1,11 +1,9 @@
 ---
-templateKey: index-page
-title: Hi, I'm Reza 👋
-image: /img/rezas-photo.svg
 heading: I'm a writer and startup growth leader based in Toronto, Canada. I
   think and write about technology startups, mental models and mindful
   productivity. See what I'm up to right now, or check out my latest posts
 subheading: Support sustainable farming while enjoying a cup
+templateKey: index-page
 mainpitch:
   title: Why Kaldi
   description: >
@@ -13,6 +11,8 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
+title: Hi, I'm Reza 👋
+image: /img/rezas-photo.svg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
@@ -26,12 +26,20 @@ intro:
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
+      title: gjfdljdlfkh
+      label: hlgkjhdlfhjdf
+      labelColor: hkgdflhgnhlkdfjngh
+      post: hfhnjgldnhklgnhlgd
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
+      title: jtyltrenyjtlenylkte
+      label: ytlynktjynlkte
+      labelColor: tyjlrejtyltr
+      post: yjtlkrjytrjyltrjyltrjyrelkytjerl
     - image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
@@ -39,6 +47,10 @@ intro:
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
+      title: yntrnylkjtrynrle
+      label: ytlrjytlrylktjry
+      labelColor: yltrnyltrnylktrnjlky
+      post: ynltrnyltrjnyktrjnylktr
     - image: /img/meeting-space.png
       text: >
         We believe that good coffee has the power to bring people together.
@@ -46,6 +58,10 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
+      title: yntrkjnyktlreynlkrt
+      label: yntrlnykltrnyktrjnylkrt
+      labelColor: yntlrynlktrjnylkrtj
+      post: yntlrynlrkejtnykrtjnylkrtj
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
