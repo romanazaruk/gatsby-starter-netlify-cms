@@ -12,7 +12,7 @@ export const IndexPageTemplate = ({ image, title, heading, intro }) => (
       <Hero title={title} heading={heading} image={image} />
       <div className="info-section">
         <h2 className="recent-posts">Recent posts</h2>
-        <PostInfo date="22 May 2020" time="40min" posts={intro} />
+        <PostInfo date="22 May 2020" time="40min" gridItems={intro.blurbs} />
         <Link to="/products" className="btn-link">
           <button className="btn-posts">See all posts</button>
         </Link>
@@ -32,13 +32,11 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image.publicURL}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        intro={frontmatter.intro.blurbs}
+        intro={frontmatter.intro}
       />
     </div>
   );
 };
-// mainpitch={frontmatter.mainpitch}
-// description={frontmatter.description}
 
 export default IndexPage;
 
