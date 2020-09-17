@@ -6,6 +6,8 @@ import HeadLine from "../components/HeadLine";
 import { Link, graphql } from "gatsby";
 
 export function NowPageTemplate({ title, description, books, workings }) {
+  let reading = books.blurbs;
+  let writing = workings.blurbs;
   return (
     <Layout>
       <div className="now-container">
@@ -14,7 +16,7 @@ export function NowPageTemplate({ title, description, books, workings }) {
           <Post text={description} />
           <div classname="container">
             <h2>What I`m Reading</h2>
-            {books.map((item) => (
+            {reading.map((item) => (
               <div>
                 <p className="post-text">
                   <span className="span-number">{item.number} </span>
@@ -23,7 +25,7 @@ export function NowPageTemplate({ title, description, books, workings }) {
               </div>
             ))}
           </div>
-          {workings.map((item) => (
+          {writing.map((item) => (
             <div>
               <HeadLine variant="h2">{item.title}</HeadLine>
               <Post text={item.description} />
@@ -42,8 +44,8 @@ const NowPage = ({ data }) => {
     <NowPageTemplate
       title={frontmatter.title}
       description={frontmatter.description}
-      books={frontmatter.reading.blurbs}
-      workings={frontmatter.working.blurbs}
+      books={frontmatter.reading}
+      workings={frontmatter.working}
     />
   );
 };
