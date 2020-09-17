@@ -12,6 +12,8 @@ reading:
       book: Book about me
     - number: 03.
       book: Book about me
+    - number: 04.
+      book: Book about me
 working:
   blurbs:
     - title: What I`m working ON
