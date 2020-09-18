@@ -10,14 +10,14 @@ export default function post() {
     <Layout>
       <div className="post-page-main-container">
         <div className="post-page-container">
-          <PostInfo
+          {/* <PostInfo
             variant="h1"
             title="Smart Small"
             date="10 May 2020"
             time=" 40 min"
             color="green"
             labelTitle="Thoughts"
-          />
+          /> */}
           <div className="post-page-description">
             <p className="post-page-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -61,7 +61,7 @@ export default function post() {
           </div>
           <ShareSocial />
         </div>
-        <div className="more-posts">
+        {/* <div className="more-posts">
           <p>More Posts</p>
           <PostInfo
             variant="h2"
@@ -87,7 +87,7 @@ export default function post() {
             color="yellow"
             labelTitle="Writing"
           />
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

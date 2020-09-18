@@ -9,6 +9,8 @@ import gallery3 from "../../static/img/gallery-3.svg";
 import gallery4 from "../../static/img/gallery-4.svg";
 import gallery5 from "../../static/img/gallery-5.svg";
 import gallery6 from "../../static/img/gallery-6.svg";
+import { Link, graphql } from "gatsby";
+
 
 // const fixUrl = (url) => "/" + url.replaceAll("../", "");
 
