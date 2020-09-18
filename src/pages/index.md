@@ -73,4 +73,14 @@ intro:
         variety of cofmdslkfmdslffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
+
+    - title: tarik
+      label: roma
+      labelColor: yellow
+      post: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of cofmdslkfmdslffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
 ---
