@@ -2,7 +2,7 @@
 templateKey: now-page
 path: /now
 title: NOW
-description: bvcbvcbvcbvcbvcbvcbvcbvcbcvbvcvbc
+description: fdsfdsdfsdfsdfdsfsdfdsfdsfsdfsdfsdfdsfsdfdsfsdfsdfsdfdsffdsfdssd
 reading:
   blurbs:
     - number: 1
