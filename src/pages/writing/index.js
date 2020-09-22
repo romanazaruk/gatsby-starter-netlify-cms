@@ -25,49 +25,14 @@ export default function index() {
             <Label title="Random" color="purple" className="label-writing" />
           </div>
           <div className="postsInfo-writing">
-            <PostInfo
+            {/* <PostInfo
               variant="h2"
               title="Reminder for the day: water+lemon"
               date="10 May 2020"
               time="40 min"
               color="yellow"
               labelTitle="Thoughts"
-            />
-            <PostInfo
-              title="Lm- ON #2"
-              date="10 May 2020"
-              time="40 min"
-              color="yellow"
-              labelTitle="Thoughts"
-            />
-            <PostInfo
-              title="Lemon and health #3"
-              date="10 May 2020"
-              time="40 min"
-              color="yellow"
-              labelTitle="Thoughts"
-            />
-            <PostInfo
-              title="How to cook lemons with sugar?"
-              date="10 May 2020"
-              time="40 min"
-              color="yellow"
-              labelTitle="Thoughts"
-            />
-            <PostInfo
-              title="Lemonology "
-              date="10 May 2020"
-              time="40 min"
-              color="yellow"
-              labelTitle="Thoughts"
-            />
-            <PostInfo
-              title="Lemon and health #3"
-              date="10 May 2020"
-              time="40 min"
-              color="yellow"
-              labelTitle="Thoughts"
-            />
+            /> */}
           </div>
         </div>
       </div>
