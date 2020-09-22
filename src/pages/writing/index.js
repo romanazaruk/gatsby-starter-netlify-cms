@@ -25,7 +25,7 @@ export default function index() {
             <Label title="Random" color="purple" className="label-writing" />
           </div>
           <div className="postsInfo-writing">
-            {/* <PostInfo
+            <PostInfo
               variant="h2"
               title="Reminder for the day: water+lemon"
               date="10 May 2020"
@@ -67,7 +67,7 @@ export default function index() {
               time="40 min"
               color="yellow"
               labelTitle="Thoughts"
-            /> */}
+            />
           </div>
         </div>
       </div>

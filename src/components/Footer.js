@@ -7,7 +7,7 @@ import SubscribeForm from "../components/SubscribeForm";
 
 export default function Footer() {
   return (
-    <div className="container">
+    <div className="container-footer">
       <div className="footer-description">
         <p className="footer-para">
           Join 1,000+ other curious minds who get my newsletter every week:

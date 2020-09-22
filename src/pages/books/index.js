@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import HeadTitle from "../../components/HeadLine";
 import "../../scss/books-page.scss";
+import { Link } from "gatsby";
 import BooksNav from "../../components/BooksNav";
 import Book1 from "../../../static/img/books1.svg";
 import Book2 from "../../../static/img/books2.svg";
@@ -16,7 +17,6 @@ import Book8 from "../../../static/img/book8.svg";
 export default function index() {
   return (
     <Layout>
-      <div className="container-books-main">
         <div className="container-books">
           <div className="books-title">
             <HeadTitle variant="h1">BOOKSHELF</HeadTitle>
@@ -35,7 +35,7 @@ export default function index() {
             </div>
           </div>
           <div className="books-list">
-            <p className="books-reading-title">Read</p>
+            <p className="books-read-title">Read</p>
             <div className="labels">
               <Label title="All" color="white" />
               <Label title="Writing" color="yellow" />
@@ -45,21 +45,36 @@ export default function index() {
               <Label title="Random" color="purple" />
             </div>
             <div className="books-list-container">
-              <img src={Book3} />
-              <img src={Book4} />
-              <img src={Book5} />
-              <img src={Book6} />
-              <img src={Book7} />
-              <img src={Book8} />
-              <img src={Book3} />
-              <img src={Book4} />
+              <Link>
+                <img src={Book3} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book4} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book5} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book6} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book7} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book8} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book3} className="book-img" />
+              </Link>
+              <Link>
+                <img src={Book4} className="book-img" />
+              </Link>
             </div>
             <div className="books-btn-more-container">
               <button className="books-btn-more">More</button>
             </div>
           </div>
         </div>
-      </div>
     </Layout>
   );
 }

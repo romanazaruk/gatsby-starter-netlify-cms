@@ -12,32 +12,47 @@ import Book5 from "../../../static/img/book5.svg";
 import Book6 from "../../../static/img/book6.svg";
 import Book7 from "../../../static/img/book7.svg";
 import Book8 from "../../../static/img/book8.svg";
+import { Link } from "gatsby";
 
 export default function index() {
   return (
     <Layout>
-      <div className="container-books-main">
-        <div className="container-books">
-          <div className="books-title">
-            <HeadTitle variant="h1">BOOKSHELF</HeadTitle>
-            <p className="books-title-description">
-              This is where I share highlights and summaries from the books I've
-              read. You can also subscribe to my weekly newsletter to stay in
-              the loop on the new titles I add to this shelf.
-            </p>
-          </div>
-          <BooksNav title1="BOOKS" title2="TOP 8" />
-          <div className="books-list">
-            <div className="books-list-container">
-              <img src={Book3} />
-              <img src={Book4} />
-              <img src={Book5} />
-              <img src={Book6} />
-              <img src={Book7} />
-              <img src={Book8} />
-              <img src={Book3} />
-              <img src={Book4} />
-            </div>
+      <div className="container-books">
+        <div className="books-title">
+          <HeadTitle variant="h1">BOOKSHELF</HeadTitle>
+          <p className="books-title-description">
+            This is where I share highlights and summaries from the books I've
+            read. You can also subscribe to my weekly newsletter to stay in the
+            loop on the new titles I add to this shelf.
+          </p>
+        </div>
+        <BooksNav title1="BOOKS" title2="TOP 8" />
+        <div className="books-list">
+          <div className="books-list-container">
+            <Link>
+              <img src={Book3} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book4} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book5} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book6} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book7} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book8} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book3} className="book-img" />
+            </Link>
+            <Link>
+              <img src={Book4} className="book-img" />
+            </Link>
           </div>
         </div>
       </div>

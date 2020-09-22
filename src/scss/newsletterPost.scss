@@ -1,10 +1,31 @@
 .newsletterPost-container {
   max-width: 304px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .post-img {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .post-p {
-  margin-top: 8px;
+  margin-top: 6px;
+}
+
+.post-img:hover {
+  position: relative;
+  left: 5px;
+  background: #fae5b2;
+  bottom: 7px;
+  box-shadow: -7px 7px #fae5b2;
+  newsletter-link: {
+    color: #50a1f3;
+  }
+}
+.newsletter-link:hover {
+  color: #50a1f3;
+  .post-img {
+    position: relative;
+    left: 5px;
+    background: #fae5b2;
+    bottom: 7px;
+    box-shadow: -7px 7px #fae5b2;
+  }
 }

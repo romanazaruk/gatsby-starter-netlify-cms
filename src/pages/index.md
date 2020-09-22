@@ -1,5 +1,6 @@
 ---
 templateKey: index-page
+path: /
 title: Hi, I'm Reza 👋
 image: /img/rezas-photo.svg
 heading: I'm a writer and startup growth leader based in Toronto, Canada. I think and write about technology startups, mental models and mindful productivity. See what I'm up to right now, or check out my latest posts

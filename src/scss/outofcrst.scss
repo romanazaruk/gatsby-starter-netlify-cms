@@ -1,11 +1,8 @@
-.outofcrst-container-main {
-  max-width: 944px;
-  border-bottom: 3px solid #e3e4eb;
-  margin-bottom: 24px;
-}
 .outofcrst-container {
   margin: 0 auto;
   max-width: 644px;
+  max-height: 700px;
+  margin-bottom: 210px;
 }
 
 .outofcrst-title {
@@ -22,7 +19,6 @@
   display: flex;
   justify-content: space-around;
   margin-top: 56px;
-  margin-bottom: 360px;
 }
 .outofcrst-img-link:hover {
   fill: #50a1f3;
@@ -52,12 +48,12 @@
 .newsletter-description-footer {
   padding-bottom: 40px;
   max-width: 624px;
-  border-bottom: 3px solid #e3e4eb;
+  border-bottom: 1px solid #e3e4eb;
 }
 .twitter-container {
   margin-top: 40px;
   max-width: 624px;
-  border-bottom: 3px solid #e3e4eb;
+  border-bottom: 1px solid #e3e4eb;
 }
 .twitter-post {
   margin-left: 40px;
@@ -89,7 +85,7 @@
   margin: 0 auto;
 }
 .podcast-list-container {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
@@ -119,7 +115,7 @@
   margin-top: 40px;
   margin: 0 auto;
   padding-bottom: 43px;
-  border-bottom: 3px solid #e3e4eb;
+  border-bottom: 1px solid #e3e4eb;
 }
 
 .podcast-title-p {
@@ -133,7 +129,7 @@
 }
 .podcast-title-container-main {
   max-width: 944px;
-  border-bottom: 3px solid #e3e4eb;
+  border-bottom: 1px solid #e3e4eb;
   margin-bottom: 24px;
 }
 

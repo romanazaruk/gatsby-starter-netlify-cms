@@ -1,6 +1,11 @@
 body {
   @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&display=swap");
 }
+.container-footer {
+  border-top: 1px solid #e3e4eb;
+  padding-top: 24px;
+}
+
 .footer-para {
   font-family: Inter;
   font-style: normal;
@@ -9,7 +14,7 @@ body {
   line-height: 157%;
   color: #28293d;
   margin-bottom: 0;
-  margin-top: 32px;
+  margin-top: 0;
 }
 
 .footer-media {

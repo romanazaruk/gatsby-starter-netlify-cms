@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Highlights from "../components/Highlights";
 import "../scss/slider.scss";
+import { Link } from "gatsby";
 
 function Arrow(props) {
   let className = props.type === "next" ? "nextArrow" : "prevArrow";
@@ -22,15 +23,17 @@ function Arrow(props) {
 export default function App() {
   const renderSlides = () =>
     [1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-      <div className="highlights-posts">
-        <div className="highlights-left">
-          <Highlights>
-            <div className="highlights-text">
-              <p> The universe doesn't allow perfection. {num}</p>
-            </div>
-          </Highlights>
+      <Link to="/" className="link-post">
+        <div className="highlights-posts">
+          <div className="highlights-left">
+            <Highlights>
+              <div className="highlights-text">
+                <p> The universe doesn't allow perfection. {num}</p>
+              </div>
+            </Highlights>
+          </div>
         </div>
-      </div>
+      </Link>
     ));
 
   return (

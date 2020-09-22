@@ -9,7 +9,6 @@ import ShareSocial from "../../../components/ShareSocial";
 export default function title() {
   return (
     <Layout>
-      <div className="podcast-title-container-main">
         <div className="podcast-title-description">
           <HeadLine variant="h1">Kugi Podcast #18</HeadLine>
           <p className="podcast-title-date-p">10 MAY 2020</p>
@@ -92,7 +91,6 @@ export default function title() {
             </div>
           </div>
         </div>
-      </div>
     </Layout>
   );
 }

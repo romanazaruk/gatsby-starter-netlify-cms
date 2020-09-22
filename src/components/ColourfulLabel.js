@@ -11,8 +11,10 @@ const styles = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: "0 15px",
+  padding: "0px 15px 0px 15px",
   marginRight: "6px",
+  marginTop: "0px",
+  marginBottom: "5px",
 };
 
 const getStyles = (color) => {
@@ -35,7 +37,7 @@ const getStyles = (color) => {
     },
     purple: {
       background: "rgba(187, 107, 217, 0.1)",
-      color: "#9B51E0;",
+      color: "#9B51E0",
     },
     darkBlue: {
       background: "rgba(107, 131, 217, 0.1)",

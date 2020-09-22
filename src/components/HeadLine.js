@@ -1,20 +1,27 @@
 import React from "react";
+import "../../src/scss/headline.scss";
 
-const getStyle = (variant) =>
-  ({
-    h1: {
-      fontSize: "30px",
-    },
-    h2: {
-      fontSize: "24px",
-    },
-    h3: {
-      fontSize: "14px",
-    },
-  }[variant]);
-
-export default function HeadLine({ variant = "h1", children }) {
+export default function HeadLine({ variant = "h1", children, color }) {
+  const getStyle = (variant) =>
+    ({
+      h1: {
+        fontSize: "30px",
+        color: color,
+      },
+      h2: {
+        fontSize: "24px",
+        color: color,
+      },
+      h3: {
+        fontSize: "14px",
+        color: color,
+      },
+    }[variant]);
   const style = getStyle(variant);
 
-  return <h1 className="headline" style={style}>{children}</h1>;
+  return (
+    <h1 className="headline" style={style}>
+      {children}
+    </h1>
+  );
 }

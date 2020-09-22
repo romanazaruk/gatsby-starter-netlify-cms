@@ -23,7 +23,7 @@ export default function Post({ variant = "h1", title, text }) {
       <p style={style} className="post-title">
         {title}
       </p>
-      <p className="post-text">{text}</p>
+      <p className="now-post">{text}</p>
     </div>
   );
 }

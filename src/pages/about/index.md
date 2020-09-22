@@ -1,8 +1,8 @@
 ---
 templateKey: "about-page"
 path: /about
-title: About fdsfndskjfndsjk
-image: /img/about-lemons.svg
+titleabout: About fdsfndskjfndsjk
+imageabout: /img/about-lemons.svg
 image1:
   image: /img/book6.svg
 image2:

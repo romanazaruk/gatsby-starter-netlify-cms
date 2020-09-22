@@ -2,19 +2,23 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
+  font-size: 30px;
   line-height: 36px;
   letter-spacing: 0.008em;
   text-transform: uppercase;
   color: #28293d;
+  margin-bottom: 10px;
 }
 
-.post-text {
+.now-post {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  line-height: 155%;
-  color: #555770;
   font-size: 18px;
+  line-height: 160%;
+  color: #555770;
+  margin-top: 0;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 576px) {

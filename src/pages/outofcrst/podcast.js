@@ -8,7 +8,6 @@ import lemonImg from "../../../static/img/lemonPost.svg";
 export default function podcast() {
   return (
     <Layout>
-      <div className="podcast-container-main">
         <div className="podcast-container">
           <HeadLine variant="h1">PODCAST</HeadLine>
           <div className="podcast-list-container">
@@ -40,7 +39,6 @@ export default function podcast() {
             </div>
           </div>
         </div>
-      </div>
     </Layout>
   );
 }

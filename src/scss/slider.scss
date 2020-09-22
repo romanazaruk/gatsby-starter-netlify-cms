@@ -15,10 +15,19 @@
   position: absolute;
   bottom: -30px;
 }
+.link-post {
+  text-decoration: none;
+}
 
 .nextArrow {
   position: absolute;
   right: 0;
+}
+.nextArrow :hover {
+  transform: scale(1.2);
+}
+.prevArrow :hover {
+  transform: scale(1.2);
 }
 .slides-responsive {
   display: none;

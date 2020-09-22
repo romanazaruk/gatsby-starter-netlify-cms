@@ -3,6 +3,7 @@ import "../scss/index-page.scss";
 import RezasPhoto from "../../static/img/rezas-photo.svg";
 import Twitter from "../../static/img/twitter-hero.svg";
 import Form from "./SubscribeForm";
+import { Link } from "gatsby";
 
 export default function hero({ title, image, heading }) {
   return (
@@ -14,7 +15,9 @@ export default function hero({ title, image, heading }) {
         <h1 className="h1-rezas">{title}</h1>
         <p className="about-rezas">{heading}</p>
         <div className="link-section">
-          <button className="btn-start">Start here</button>
+          <Link to="/about" className="btn-start-link">
+            <button className="btn-start">Start here</button>
+          </Link>
           <img src={Twitter} className="twitter-btn" />
         </div>
         <p className="p-join">

@@ -12,25 +12,25 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-#   - name: "blog"
-#     label: "Blog"
-#     folder: "src/pages/blog"
-#     create: true
-#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-#     fields:
-#       - {
-#           label: "Template Key",
-#           name: "templateKey",
-#           widget: "hidden",
-#           default: "blog-post",
-#         }
-#       - { label: "Title", name: "title", widget: "string" }
-#       - { label: "Publish Date", name: "date", widget: "datetime" }
-#       - { label: "Description", name: "description", widget: "text" }
-#       - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
-#       - { label: "Featured Image", name: "featuredimage", widget: image }
-#       - { label: "Body", name: "body", widget: "markdown" }
-#       - { label: "Tags", name: "tags", widget: "list" }
+  #   - name: "blog"
+  #     label: "Blog"
+  #     folder: "src/pages/blog"
+  #     create: true
+  #     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #     fields:
+  #       - {
+  #           label: "Template Key",
+  #           name: "templateKey",
+  #           widget: "hidden",
+  #           default: "blog-post",
+  #         }
+  #       - { label: "Title", name: "title", widget: "string" }
+  #       - { label: "Publish Date", name: "date", widget: "datetime" }
+  #       - { label: "Description", name: "description", widget: "text" }
+  #       - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+  #       - { label: "Featured Image", name: "featuredimage", widget: image }
+  #       - { label: "Body", name: "body", widget: "markdown" }
+  #       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
     label: "Pages"
@@ -52,12 +52,21 @@ collections:
               label: Intro,
               name: intro,
               widget: object,
-              fields: [{ label: Blurbs, name: blurbs, widget: list, fields: [
+              fields:
+                [
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
                         { label: Title, name: title, widget: string },
                         { label: Label, name: label, widget: string },
                         { label: LabelColor, name: labelColor, widget: string },
                         { label: Post, name: post, widget: text },
-              ]}],
+                      ],
+                  },
+                ],
             }
       - file: "src/pages/about/index.md"
         label: "About"
@@ -69,37 +78,46 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title", name: "titleabout", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Image1", name: "image1", widget: image }
-          - { label: "Image2", name: "image2", widget: image }
-          - { label: "Image3", name: "image3", widget: image }
-          - { label: "Image4", name: "image4", widget: image }
-          - { label: "Image5", name: "image5", widget: image }
-          - { label: "Image6", name: "image6", widget: image }
+          - { label: "Image1", name: "image1", widget: "image" }
+          - { label: "Image2", name: "image2", widget: "image" }
+          - { label: "Image3", name: "image3", widget: "image" }
+          - { label: "Image4", name: "image4", widget: "image" }
+          - { label: "Image5", name: "image5", widget: "image" }
+          - { label: "Image6", name: "image6", widget: "image" }
+
       - file: "src/pages/now/index.md"
         label: "Now Page"
         name: "now"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: hidden, default: "now-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: string}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: hidden,
+              default: "now-page",
+            }
+          - { label: Title, name: titleNow, widget: string }
+          - { label: Description, name: descriptionNow, widget: string }
+          - { label: Title, name: titleWorking, widget: string },
+          - { label: Description, name: descriptionWorking, widget: text },
           - {
               label: Reading,
               name: reading,
               widget: object,
-              fields: [{ label: Blurbs, name: blurbs, widget: list , fields: [
+              fields:
+                [
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
                         { label: Number, name: number, widget: string },
                         { label: Book, name: book, widget: string },
-              ]}],
+                      ],
+                  },
+                ],
             }
-          - {
-              label: Working,
-              name: working,
-              widget: object,
-              fields: [{ label: Blurbs, name: blurbs, widget: list , fields: [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-              ]}],
-            }
+

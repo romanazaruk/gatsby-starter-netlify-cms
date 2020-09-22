@@ -2,20 +2,23 @@ import React from "react";
 import Layout from "../components/Layout";
 import Post from "../components/Post";
 import "../scss/now-page.scss";
-import HeadLine from "../components/HeadLine";
 import { Link, graphql } from "gatsby";
 import Test from "../components/Test";
 
-export function NowPageTemplate({ title, description, book, working }) {
+export function NowPageTemplate({
+  title,
+  description,
+  book,
+  workingTitle,
+  workingDescription,
+}) {
   return (
     <Layout>
-      <div className="now-container">
         <div className="now-main">
-          <HeadLine variant="h1">{title}</HeadLine>
-          <Post text={description} />
-          <Test reading={book.blurbs} writing={working.blurbs} />
+          <Post title={title} text={description} />
+          <Test reading={book} />
+          <Post title={workingTitle} text={workingDescription} />
         </div>
-      </div>
     </Layout>
   );
 }
@@ -25,10 +28,11 @@ const NowPage = ({ data }) => {
 
   return (
     <NowPageTemplate
-      title={frontmatter.title}
-      description={frontmatter.description}
+      title={frontmatter.titleNow}
+      description={frontmatter.descriptionNow}
       book={frontmatter.reading}
-      working={frontmatter.working}
+      workingTitle={frontmatter.titleWorking}
+      workingDescription={frontmatter.descriptionWorking}
     />
   );
 };
@@ -39,20 +43,16 @@ export const pageQuery = graphql`
   query NowPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "now-page" } }) {
       frontmatter {
-        title
-        description
+        titleNow
+        descriptionNow
         reading {
           blurbs {
             number
             book
           }
         }
-        working {
-          blurbs {
-            title
-            description
-          }
-        }
+        titleWorking
+        descriptionWorking
       }
     }
   }

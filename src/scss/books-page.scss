@@ -1,11 +1,7 @@
 .container-books {
   max-width: 625px;
   margin: 0 auto;
-}
-.container-books-main {
-  border-bottom: 3px solid #e3e4eb;
-  padding-bottom: 123px;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
 }
 
 .books-title {
@@ -41,10 +37,10 @@
   text-decoration: none;
   margin-right: 32px;
 }
-.active,
+.active-books,
 .books-link:hover {
+  border-bottom: 1px solid #50a1f3;
   color: #50a1f3;
-  text-decoration: underline;
 }
 
 .books-reading-title {
@@ -59,8 +55,29 @@
   margin-bottom: 24px;
 }
 
+.books-read-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #28293d;
+  margin-top: 45px;
+  margin-bottom: 24px;
+}
+
 .books-img-reading {
   margin-right: 16px;
+}
+
+.books-img-reading:hover {
+  position: relative;
+  left: 5px;
+  background: #fae5b2;
+  bottom: 7px;
+  box-shadow: -7px 7px #fae5b2;
 }
 
 .books-list {
@@ -68,10 +85,21 @@
 }
 
 .books-list-container {
+  position: relative;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 24px;
+}
+.book-img {
+  margin-bottom: 35px;
+}
+.book-img:hover {
+  position: relative;
+  left: 5px;
+  background: #fae5b2;
+  bottom: 7px;
+  box-shadow: -7px 7px #fae5b2;
 }
 
 .books-btn-more {
@@ -85,6 +113,7 @@
   line-height: 184%;
   color: #ffffff;
   margin-top: 34px;
+  margin-bottom: 70px;
 }
 
 .books-btn-more-container {
@@ -122,9 +151,7 @@
   max-width: 267px;
   display: flex;
   justify-content: space-around;
-}
-.rating-stars {
-  padding-top: 12px;
+  margin-top: 12px;
 }
 .books-title-description {
   max-width: 637px;
@@ -137,7 +164,7 @@
   margin: 0 auto;
   margin-top: 24px;
   padding-bottom: 43px;
-  border-bottom: 3px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .highlights-container-main {
@@ -145,7 +172,7 @@
   margin: 0 auto;
   margin-top: 40px;
   padding-bottom: 70px;
-  border-bottom: 3px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .highlights-posts {
@@ -160,6 +187,7 @@
   max-width: 624px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .book-title-photos {
